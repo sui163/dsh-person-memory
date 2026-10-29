@@ -1,0 +1,4 @@
+# dsh-person-memory bundle patch: 写入 profile 插件树
+- insert:
+    - id: person-memory
+      name: dsh-person-memory

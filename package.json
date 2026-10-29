@@ -1,0 +1,38 @@
+{
+  "name": "dsh-person-memory",
+  "version": "1.0.0",
+  "private": true,
+  "description": "个人自用记忆插件，拥有五层记忆",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./scripts/auto-record.ps1": "./scripts/auto-record.ps1",
+    "./package.json": "./package.json"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "inject": [],
+      "platform": "web"
+    }
+  },
+  "files": [
+    "lib",
+    "scripts",
+    "cordis.patch.yml",
+    "README.md",
+    "LICENSE"
+  ],
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "memory",
+    "diary",
+    "person"
+  ],
+  "license": "MIT"
+}
